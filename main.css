@@ -374,7 +374,8 @@ background: #FFF;
 
 
 .slider{
-  background: black;
+  background: url('slider/Slider.png') no-repeat;
+  /*почему так странно отбразилась картинка я же поставил не повторение*/
   height:650px ;
   position: relative;
   
@@ -398,6 +399,7 @@ background: #FFF;
 
 .feedback{
   background: #FFF;
+  height: 650px;
 }
 
 .feedback__text{
@@ -413,6 +415,13 @@ background: #FFF;
 }
 
 
+.feedback__desk{
+  display: block;
+  margin-left: 40px;
+  max-width: 500px;
+  max-height: 264px;
+}
+
 
 
 
@@ -420,7 +429,9 @@ background: #FFF;
 .feedback__spisok{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+ 
   
 }
 
@@ -431,6 +442,14 @@ background: #FFF;
 
 .feedback__item{
   margin-right: 20px;
+  
+}
+
+.feedback__icon{
+  overflow-x:  hidden; 
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
 }
 
 .feedback__item:last-child{
@@ -438,17 +457,19 @@ background: #FFF;
 }
 
 .feedback__item__activ{
-  border: solid 3px red;
+  border: solid 5px red;
   border-radius: 50%;
-  width: 84px;
-  height: 84px;
+  width: 85px;
+  height: 85px;
 
 }
 
-.feedbacK__icon{
-  width: 84px;
-  height: 84px;
-  border-radius: 50%;
+
+
+
+
+.video{
+  height: 650px;
 }
 
 
@@ -461,49 +482,128 @@ background: #FFF;
 .video__content{
   display: flex;
   justify-content: center;
+  margin-bottom: 110px;
 }
+
+
+
+
+
+
+
 
 
 
 
 
 .zacaz{
-  background: black;
+  background:url('zacaz/cta.png');
   color:#fff;
+  margin-bottom: 0px;
   
-
-
 }
 
 .zacaz__container{
-padding: 70px;
+padding: 70px 0px;
+height: 650px;
+/*display: flex;
+flex-direction: column;*/ 
 }
+
+
 
 .zacaz__text{
+  display: flex; 
+  justify-content: center;
+  }
+  
+  
+  .form__row{
+    display: flex;
+  }
 
-left:400px;
-top: 70px;
+  .form__row__one{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__imput{
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  /*padding: 20px 250px 20px 30px;*/
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  color: #1A1B1E;
+  background: #FFFFFF;
+  }
+
+  .form__imput__one{
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  /*padding: 20px 250px 20px 30px;*/
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  color: #1A1B1E;
+  background: #FFFFFF;
+
+  }
+
+  .form__imput:last-child{
+    margin-right: 0px;
+  }
+
+
+  .form__imput--textarea{
+    display: flex;
+    flex:1;
+    margin-right: 0px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 20px ;
+    height: 256px;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #1A1B1E;
+    background: #FFFFFF;
+  }
+
+
+  .form__row__four{
+    display: flex;
+  }
+
+  .form__row__five{
+    display: flex;
+  }
+
+  .form__row__seven{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+
+
+
 
   
-}
-
-
-.form{
-  position: absolute;
-  margin-top: 60px;
-}
-
-
-
-
-
-.zacaz__button{
-  display: flex;
-  align-items: center;
-  margin-right:220px ;
-  margin-bottom: 85px;
-}
-
+  .zacaz__button{
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 400px;
+    
+  }
 
 .zacaz__button__one{
     border: solid 1px transparent;
@@ -518,7 +618,7 @@ top: 70px;
     
   }
   
-  .zacaz__button:hover{
+  .zacaz__button__one:hover{
     background: #CA1B36;
     border: solid 1px #CA1B36;
   }
@@ -527,6 +627,68 @@ top: 70px;
     color: #FFFFFF;
   }
 
+
+
+
+
+  
+
+
+/*.form__row{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__row:last-child{
+  margin-bottom: 0px;
+}
+.form__imput{
+  /*display: flex;*/
+  /*flex: 1;
+  margin-right: 20px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 20px 250px 20px 30px;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #1A1B1E;
+  background: #FFFFFF;
+}
+
+.form__imput:hover{
+  border:solid 2px salmon;
+  
+}
+
+
+
+.form__imput:last-child{
+  margin-right: 0px;
+}
+
+.form__imput--textarea{
+  display: flex;
+  flex:1;
+  margin-right: 0px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 20px ;
+  height: 256px;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  color: #1A1B1E;
+  background: #FFFFFF;
+}
+
+
+.form__imput--textarea:hover{
+  
+  border: solid 2px salmon;
+  
+}*/
 
 
 

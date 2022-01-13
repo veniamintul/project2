@@ -64,13 +64,220 @@ margin: 0;
 
 .glavnaya{
   display: flex;
+  align-items: center;
+
+ 
 }
 
 .glavnaya__preview{
-  display: flex;
+  display: block;
 }
 
 
+.glavnaya__button{
+  border: solid 1px transparent;
+  border-radius: 100px;
+  height: 55px;
+  width: 165px;
+  background: #E01F3D;
+  padding: 20px  40px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  
+}
+
+.glavnaya__button:hover{
+  background: #CA1B36;
+  border: solid 1px #CA1B36;
+}
+
+
+
+
+
+.glavnaya__list{
+  display: flex;
+  
+}
+
+.glavnaya__item{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.glavnaya__item:last-child{
+  margin-right: 0px;
+}
+
+
+
+
+
+
+.paginator__list{
+  display: block;
+  
+}
+
+.paginator__item{
+  display: block;
+  margin-top:20px ;
+}
+
+.paginator__ellips{
+  content: "";
+  border-radius: 50%;
+  background: #292929;
+  height: 9px;
+  width: 9px;
+  
+}
+
+
+
+
+
+
+
+.pochemu{
+  background: #fff;
+}
+
+
+
+.pochemu__list{
+  display: flex;
+}
+
+.pochemu__text{
+  display: flex;
+  justify-content: center;
+}
+
+.pochemu__title{
+  display: flex;
+  justify-content: center;
+}
+
+
+.pochemu__spisok{
+  display: flex;
+  justify-content: center;
+}
+
+
+.pochemu__list{
+  display: flex;
+  justify-content:center;
+
+}
+
+.pochemu__item{
+  display:block;
+  max-width: 280px;
+  padding: 0px 10px;
+  margin-right: 55px;
+}
+
+.pochemu__item:hover{
+  margin-right: 0px;
+}
+
+.circle {
+  content: "";
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  background: red/*#F2F5F4*/;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-left: 50px;
+  /*Почему при увеличении марджина кружок выскакивает из контейнера?*/
+
+}
+
+.pochemu__item__text{
+display: block;
+}
+
+.pochemu__item__title{
+  padding-left: 20px;
+}
+
+
+
+
+
+
+.feedback{
+  background: #FFF;
+}
+
+.feedback__text{
+  display: flex;
+  justify-content: center;
+}
+
+.feedback__contents{
+  display: flex;
+  justify-content: center;
+  max-width: 940px;
+  padding: 42px;
+}
+
+
+
+
+
+
+.feedback__spisok{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+
+.feedback__list{
+  display: flex;
+}
+
+.feedback__item{
+  margin-right: 20px;
+}
+
+.feedback__item:last-child{
+  margin-right: 0px;
+}
+
+.feedback__item__activ{
+  border: solid 3px red;
+  border-radius: 50%;
+  width: 84px;
+  height: 84px;
+
+}
+
+.feedbacK__icon{
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+}
+
+
+
+.video__text{
+  display: flex;
+  justify-content: center;
+}
+
+.video__content{
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -112,6 +319,7 @@ margin: 0;
 
   .map{
     background: url("map/map.png");
+    height: 600px;
   }
 
 

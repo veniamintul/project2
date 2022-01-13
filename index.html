@@ -32,7 +32,7 @@
                <nav class="menu">
                    <ul class="menu__list">
                        <li class="menu__icon">
-                           <a href="#">О нас</a>
+                           <a href="#about">О нас</a>
                        </li>
 
                        <li class="menu__icon">
@@ -40,7 +40,7 @@
                        </li>
 
                        <li class="menu__icon">
-                           <a href="#">Команда</a>
+                           <a href="#team">Команда</a>
                        </li>
 
                        <li class="menu__icon">
@@ -49,7 +49,7 @@
 
                         
                        <li class="menu__icon">
-                           <a href="#">Отзывы</a>
+                           <a href="#feedback">Отзывы</a>
                        </li>
 
                        
@@ -58,7 +58,7 @@
                        </li>
 
                        <li class="menu__icon">
-                           <a href="#">Контакты</a>
+                           <a href="#map">Контакты</a>
                        </li>
 
                    </ul>
@@ -72,7 +72,7 @@
         </header>
 
            <main class="main">
-              <div class="glavnaya">
+              <div class="glavnaya" id="about">
                    <div class="container glavnaya">
 
                   
@@ -143,8 +143,8 @@
 
                             <div class="paginator">
                                 <ul class="paginator__list">
-                                    <li class="paginator__item paginator__item__activ">
-                                        <div class="paginator__ellips"></div>
+                                    <li class=" paginator__item__activ  paginator__item ">
+                                        <div class="paginator__ellips "></div>
                                     </li>
 
                                     <li class="paginator__item">
@@ -186,7 +186,7 @@
                  
               </div>
 
-              <div class="pochemu">
+              <div class="pochemu" id="pochemu">
                   <div class="container pochemu">
 
                     <h1 class="pochemu__text">
@@ -259,8 +259,9 @@
 
     <div class="shop">
         <div class="container shop">
+            
             <div class="shop__pictures">
-                <img src="shop/Ellipse 6.png" alt="наушники">
+                    <img src="shop/Ellipse 6.png" alt="наушники">
             </div>
 
 
@@ -288,24 +289,24 @@
                         iPhone — они мгновенно подключатся к нему.
                     </p>
 
-                    <ul class="character__list">
-                        <li  class="character__item">
-                             <h3 class="character__title">
+                    <ul class="shop__list">
+                        <li  class="shop__item">
+                             <h3 class="shop__title">
                                 Зарядка
                              </h3>
 
-                             <h3 class="character__title-one">
+                             <h3 class="shop__title-one">
                                 2 часа
                              </h3>
 
                         </li>
 
-                        <li  class="character__item">
-                            <h3 class="character__title">
+                        <li  class="shop__item">
+                            <h3 class="shop__title">
                                вес
                             </h3>
 
-                            <h3 class="character__title-one">
+                            <h3 class="shop__title-one">
                                215 грамм
                             </h3>
 
@@ -315,16 +316,18 @@
 
                     </ul>
 
-                    <div class="cost">
-                        <h2 class=shop__cost>
-                            14 990 ₽
-                        </h2>
-                    </div>
 
-                    <div class="spop__button">
+                    <div class="container__cost">
+                         <div class="cost">
+                            <h2 class=shop__cost>
+                                  14 990 ₽
+                            </h2>
+                         </div>
+
+                         <div class="shop__button">
                         ЗАКАЗАТЬ
+                         </div>
                     </div>
-
                 </div>     
             </div>
                     
@@ -336,17 +339,38 @@
 
 
 
-             <div class="team">
-                 <div class="container team">
+    <div class="team" id="team">
+        <div class="container team">
                      
-                    <h1 class="team_text">
+                    <h1 class="team__text">
                         команда
                     </h1>
 
 
-                    <div class="team__box">
-                        <img src="" alt="фото команды">
-                    </div>
+            <div class="team__box">
+                    <ul class="team__list">
+                        <li class="team__item">
+
+                            <div class="team__photo">
+                                  <img src="" alt="фото команды">
+                            </div>
+
+                            <div class="team__vipad">
+                                <h2 class="team__text">
+                                    Борис Федорович
+                                </h2>
+
+                                <div class="team__triangle" alt="треугольник"></div>
+
+
+                            </div>
+                        </li>
+
+                    </ul>
+                         
+
+
+            </div>
 
 
                     <!--добавить фото и дописать блок-->
@@ -354,13 +378,23 @@
 
 
 
+        </div>
+    </div>
+
+
+         <!--ТЕКСТ СЛАЙДАМИ-->
+             <div class="slider">
+               
+                 <div class="container slider">
+                    <h1 class="slider__text">
+                        ЦВЕТА
+                    </h1>
                  </div>
              </div>
 
 
-
               
-              <div class="feedback">
+              <div class="feedback" id="feedback">
                   <div class="container feedback">
                      <h1 class="feedback__text">
                         ОТЗЫВЫ
@@ -432,7 +466,9 @@
               </div>
 
               <div class="zacaz">
-                  <div class="container zacaz">
+                <div class="container">
+                    <div class="zacaz__container">
+
                     <h1 class="zacaz__text">
                         ЗАКАЖИТЕ ДОСТАВКУ
                     </h1>
@@ -456,20 +492,23 @@
             
                     </form>
 
-                    <div class="zacaz__button">
+                <div class="zacaz__button" >
+                    <div class="zacaz__button__one">
                         ЗАКАЗАТЬ
                     </div>
 
-                    <div class="zacaz__button__2">
+                    <div class="zacaz__button__two">
                        Очистить
                     </div>
+                </div>
 
+                    </div>
 
                 
-                  </div>
+                </div>
               </div>
 
-              <div class="map">
+              <div class="map" id="map">
                 <!--<img src="map/map.png" alt="карта">-->
                 <div class="container map">
                     
@@ -503,6 +542,8 @@
                           <a href="tel:88009009030" class="contacts_top">88009009030</a>
                       </address>
                 </div>
+
+
                 
                 <div class="footer__col footer__col--align--right">
 

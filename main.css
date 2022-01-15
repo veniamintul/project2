@@ -41,18 +41,22 @@ margin: 0;
 
   .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     /*align-items: flex-start;*/
-    margin-bottom: 0px;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    margin-left: 70px;
+    width: 1050px;
     
     }
   
 
   .menu{
-    display: flex;
+    display: block;
+    margin-left: 50px;
+    margin-right: -40px;
+    width: 800px;
     
   }
 
@@ -63,7 +67,7 @@ margin: 0;
 
   .menu__icon{
     display: flex;
-    margin-right: 20px;
+    margin-right: 30px;
   }
 
   .menu__icon:last-child{
@@ -83,6 +87,7 @@ margin: 0;
 
   .contacts{
     display: flex;
+    
   }
 
   .contacts__top{
@@ -138,7 +143,7 @@ margin: 0;
 .glavnaya__preview{
   display: block;
   width: 400px;
-  margin-right: 35px;
+  margin-right: 100px;
 }
 
 .glavnaya__text{
@@ -147,6 +152,7 @@ font-weight: bold;
 font-size: 48px;
 line-height: 52px;
 margin-bottom: 20px;
+text-transform: uppercase;
 }
 
 .glavnaya__title{
@@ -155,6 +161,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 21px;
 line-height: 25px;
+margin-top: 45px;
 margin-bottom: 40px;
 }
 
@@ -168,6 +175,7 @@ margin-bottom: 40px;
   color: #FFFFFF;
   display: flex;
   align-items: center;
+  margin-top: 20px;
   
 }
 
@@ -190,7 +198,7 @@ margin-bottom: 40px;
 .glavnaya__item{
   display: flex;
   align-items: flex-start;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 
 .glavnaya__item:last-child{
@@ -293,8 +301,8 @@ line-height: 18px;
   /*display: flex;
   flex-direction: column;*/
   display: block;
-  margin-top: 50px;
-  margin-left: -200px;
+  margin-top: 150px;
+  margin-left: -130px;
   height: 550px;
 
   
@@ -307,7 +315,7 @@ line-height: 18px;
   align-items: center;
   display: flex;
   flex-direction: column;*/
-  width: 500px;
+  width: 600px;
   height: 120px;
   margin-left: 200px;
   margin-bottom: 50px;
@@ -323,6 +331,8 @@ line-height: 18px;
   font-size: 48px;
   line-height: 52px;
   margin-top: 0px;
+  margin-left: 20px;
+  text-transform: uppercase;
   
 }
 
@@ -333,7 +343,9 @@ font-weight: normal;
 font-size: 16px;
 line-height: 19px;
 color: #666666;
-margin-top: 60px;
+margin-top: 70px;
+margin-left: 30px;
+text-align: center;
 
 
 }
@@ -355,7 +367,7 @@ margin-top: 60px;
   display: flex;
   flex-direction: column;
   max-width: 280px;
-  padding: 0px 10px;
+  padding: 20px 5px;
   margin-right: 55px;
   align-items: center;
 }
@@ -380,6 +392,9 @@ margin-top: 60px;
   align-items: center;
   justify-content: center;
 
+}
+.pochemu__item{
+  margin-top: 10px;
 }
 
 .pochemu__item__text{
@@ -424,7 +439,7 @@ color: #666666;
 .shop{
   display: flex;
   align-content: center;
-  padding: 90px 60px;
+  padding: 65px 50px;
 }
 
 .shop__pictures{
@@ -534,6 +549,10 @@ line-height: 19px;
 color: #666666;
 }
 
+.shop__content{
+  margin-left: 20px;
+}
+
 
 
 .shop__list{
@@ -633,22 +652,26 @@ color: #666666;
 background: #FFF;
 display: flex;
 flex-direction: column;
-height: 550px;
+height: 720px;
 }
 
 
 .team__headline{
   display: block;
-  margin-top: 0px;
+  margin-top: 45px;
   margin-left: 400px;
+  margin-bottom: 30px;
 }
 
 .team__title{
-font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 52px;
-color: #292929;
+ 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #292929;
+  
 }
 
 
@@ -672,6 +695,7 @@ color: #292929;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .vipad__one{
@@ -765,6 +789,8 @@ color: #292929;
   /*почему так странно отбразилась картинка я же поставил не повторение*/
   height:650px ;
   position: relative;
+  overflow: hidden;
+  
   
 }
 
@@ -794,13 +820,17 @@ color: #292929;
 
 
 .feedback{
-  background: #FFF;
+  background:#fff;
   height: 650px;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .feedback__headline{
 display: block;
-margin-top: 50px;
 margin-left: 400px;
+margin-top: 180px;
 }
 
 
@@ -847,9 +877,9 @@ color: #292929;
 
 .feedback__spisok{
   display: flex;
+  margin-top: 50px;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  
  
   
 }

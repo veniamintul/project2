@@ -219,50 +219,6 @@ line-height: 18px;
 }
 
 
-.paginator{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: 20px;
-  
-}
-
-.paginator__list{
-  position: fixed;
-}
-
-.paginator__item{
-  display: block;
-  margin-top:20px ;
-  
-}
-
-.paginator__ellips{
-  content: "";
-  border-radius: 50%;
-  background: #292929;
-  height: 9px;
-  width: 9px;
-  
-}
-
-
-.paginator__item__activ{ 
-  content: "";                        /*почему черная точка наложилась на красную*/
-  background: #E01F3D;
-  height: 9px;
-  width: 9px;
-  border-radius: 50%;
-  border: solid 5px red;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -821,16 +777,20 @@ height: 720px;
 
 .feedback{
   background:#fff;
-  height: 650px;
+  /*height: 650px;*/
   padding: 60px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+
+
+
 .feedback__headline{
 display: block;
 margin-left: 400px;
-margin-top: 180px;
+margin-top: 0px;
 }
 
 
@@ -872,16 +832,11 @@ color: #292929;
   margin-top: 50px;
 }
 
-
-
-
 .feedback__spisok{
   display: flex;
   margin-top: 50px;
   justify-content: center;
-  
- 
-  
+   
 }
 
 
@@ -971,12 +926,14 @@ color: #292929;
   background:url('zacaz/cta.png');
   color:#fff;
   margin-bottom: 0px;
+  overflow: hidden;
+
   
 }
 
 .zacaz__container{
-padding: 70px 0px;
-height: 650px;
+padding: 70px 0px 70px;
+
 /*display: flex;
 flex-direction: column;*/ 
 }
@@ -984,6 +941,13 @@ flex-direction: column;*/
 .zacaz__text{
   display: flex; 
   justify-content: center;
+  font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 52px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
   }
   
   
@@ -1245,7 +1209,7 @@ flex-direction: column;*/
 
   .map{
     background: url("map/map.png");
-    height: 600px;
+    height: 780px;
   }
 
 
@@ -1333,3 +1297,48 @@ flex-direction: column;*/
   .social__item:first-child{
     margin-left: 0;
   }
+
+
+
+
+
+
+
+
+
+
+
+  .paginator{
+    display: block;
+    right: 300px;
+    top: 200px;
+    z-index: 100;
+    position: fixed;
+    
+  }
+  
+
+  .paginator__item{
+    margin-top:20px ;
+    
+  }
+  
+  .paginator__ellips{
+    border-radius: 50%;
+    background: #292929;
+    height: 9px;
+    width: 9px;
+    display: block;
+    
+  }
+  
+  
+  .paginator__item__activ{ 
+                          /*почему черная точка наложилась на красную*/
+    background: #E01F3D;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    border: solid 5px red;
+  }
+  

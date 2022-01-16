@@ -46,8 +46,8 @@ margin: 0;
     /*align-items: flex-start;*/
     margin-top: 10px;
     margin-bottom: 35px;
-    margin-left: 70px;
-    width: 1050px;
+    /*margin-left: 70px;*/
+    /*width: 1050px;*/
     
     }
   
@@ -254,8 +254,6 @@ line-height: 18px;
 
 
 .pochemu__box{
-  /*display: flex;
-  flex-direction: column;*/
   display: block;
   margin-top: 150px;
   margin-left: -130px;
@@ -266,11 +264,6 @@ line-height: 18px;
 
 .pochemu__content{
   display: block;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;*/
   width: 600px;
   height: 120px;
   margin-left: 200px;
@@ -319,7 +312,6 @@ text-align: center;
 }
 
 .pochemu__item{
-  /*display:block;*/
   display: flex;
   flex-direction: column;
   max-width: 280px;
@@ -339,10 +331,7 @@ text-align: center;
   height: 128px;
   background: #F2F5F4;
   display: flex;
-  /*align-items: center;
-  padding-left: 30px;
-  padding-top: 30px;
-  margin-left: 50px;*/
+ 
   /*Почему при увеличении марджина кружок выскакивает из контейнера?*/
   
   align-items: center;
@@ -1101,22 +1090,55 @@ color: #FFFFFF;
 
   .form__row__tag{
     display: flex;
-  }
-
-  .servcies__tag{
-    display: flex;
-    width: 245px;
+    width: 450px;
     align-items: center;
   }
 
+
+  .services__box{
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .one__tag{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+   }
+  .servcies__tag{
+     cursor: pointer; /* это значит что мы пожем нажимать тег*/
+  }
   .cyrcle__tag{
     background: #fff;
     border-radius:50% ;
     height: 25px;
     width:25px ;
     display: block;
-    margin-right: 5px;
+    margin-right: 10px;
+    position: relative;
   }
+  .controls__checkbox:checked~.controls__tag{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: red;
+  }
+
+  /*.controls__checkbox{
+    display: none;                       
+  }
+                           /*почему эта команда не срабатывает?*/
+  
+
+
+
 
   .form__row__tag__one{
     display: flex;
@@ -1124,11 +1146,18 @@ color: #FFFFFF;
     
   }
 
-  .servcies__tag__one{
+
+  .services__box__one{
     display: flex;
     align-items: center;
     width: 250px;
   }
+
+
+  .servcies__tag__one{
+    cursor:pointer;    /* это значит что мы пожем нажимать тег*/
+  }
+
 
 
   .rectengle__tag {
@@ -1138,7 +1167,26 @@ color: #FFFFFF;
     border-radius: 4px;
     display: block;
     margin-right: 5px;
+    position: relative;
   }
+
+
+  .controls__checkbox:checked~.controls__rectengle__tag__small{
+
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #E01F3D;
+   
+  }
+
+
 
   .zacaz__button{
     display: flex;
@@ -1185,6 +1233,19 @@ color: #FFFFFF;
 
 
 
+
+/*.cyrcle__tag__small{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background:transparent;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }*/
 
 
   
@@ -1310,35 +1371,69 @@ color: #FFFFFF;
 
   .paginator{
     display: block;
-    right: 300px;
-    top: 200px;
-    z-index: 100;
-    position: fixed;
-    
+    right: 10%;
+    top: 20%;
+    z-index: 10;
+    position: fixed; 
   }
-  
 
   .paginator__item{
-    margin-top:20px ;
+    margin-top:20px ; 
+  }
+
+  .paginator__ellips{
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    display: block;
+    border: 1px solid transparent;
+    position: relative;
     
   }
+
+  .paginator__item--activ .paginator__ellips{
+ border-color: red;
+
+}
+
+.paginator__ellips:before{ 
+    content: "";
+    border-radius: 50%;
+    background: /*#292929;*/ red;    /*мне нужно чтобы кружочек изменился один*/
+    height: 9px;
+    width: 9px;
+    display: block; 
+    position: absolute;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);*/   /*почему-то не подключается трансформ*/
+    top: 2px;
+    left: 0;
+    right: 1px;
+    margin: auto;
+  }
+
   
-  .paginator__ellips{
+
+
+
+
+
+   /*.paginator__ellips{
     border-radius: 50%;
     background: #292929;
     height: 9px;
     width: 9px;
     display: block;
     
-  }
+  }*/
   
   
-  .paginator__item__activ{ 
-                          /*почему черная точка наложилась на красную*/
+  /*.paginator__item--activ{ 
+                         
     background: #E01F3D;
     height: 9px;
     width: 9px;
     border-radius: 50%;
     border: solid 5px red;
-  }
-  
+  }*/

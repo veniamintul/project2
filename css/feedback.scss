@@ -24,7 +24,7 @@
     font-size: 48px;
     line-height: 52px;
     text-transform: uppercase;  /*делает все буквы прописными*/
-    color: #292929;
+    color: $black;
   }
   
   .feedback__subtitle{
@@ -32,7 +32,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #292929;
+  color: $black;
   }
   
   .feedback__contents{
@@ -69,6 +69,13 @@
   
   .feedback__item{
     margin-right: 20px;
+
+    &:active{  
+      border: solid 5px $red;
+      border-radius: 50%;
+      width: 85px;
+      height: 85px;
+    }
     
   }
   
@@ -83,10 +90,10 @@
     margin-right: 0px;
   }
   
-  .feedback__item__activ{
-    border: solid 5px red;
+  /*.feedback__item__activ{
+    border: solid 5px $red;
     border-radius: 50%;
     width: 85px;
     height: 85px;
   
-  }
+  }*/

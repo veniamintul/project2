@@ -7,6 +7,29 @@ $black:#292929;
 $greendark:#666666;
 $red:#E01F3D;
 
+//bottom
+@mixin botton {
+    border: solid 1px transparent;
+      border-radius: 100px;
+      height: 55px;
+      width: 165px;
+      background: $red;
+      padding: 20px  40px;
+      display: flex;
+      align-items: center;
+
+      &:hover{
+        background: #CA1B36;
+        border: solid 1px #CA1B36;}
+      
+    }
+
+    
+
+
+
+
+
 
 @import url("layout.scss");
 @import url("normalize.css");
